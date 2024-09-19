@@ -1,23 +1,25 @@
-1. missing <!DOCTYPE html> in line 1
+line 1 missing <!DOCTYPE html> 
 line 2 should have <HTML language="en">
-2. missing </head> on line 7 
-3. missing <h1> in line 9
-4. missing <p> in line 11 
-5. In line 19 replace the first </li> for an opening tag <li>
-6. change the closing tag to from <ul> to </ol> in line 24
-7. missing </p> in line 26
-change the image link name to jpg on line 28 
-add the relative path of the folder where the images are on line
-8. line 30 delete closing tag </img> and replace for </a>
-9. Add a closing tag </td> for line 39
+line 2 change language to lang
+line 7 </head>  
+ine 9 missing <h1> 
+line 11  missing <p> 
+Line 19 replace the first </li> for an opening tag <li>
+line 24 change the closing tag to from <ul> to </ol> 
+line 26 missing </p> 
+line 28 change the image link name to jpg on  
+line 28 add the relative path of the folder where the images are on line
+line 30 delete closing tag </img> and replace for </a>
+line 39 9. Add a closing tag </td> for
 line 46 also add the image relative path
-change img source to img src
+line 46 change img source to img src
 line 48 add the opening tag <p>
 line 48 add the closing tag </p>
 line 48 add the tag <s>and </s> to make it a strikethrough
-line 50 change bg-color to background-color
+line 50 change to style="background-color:lightgray;"
 line 54 add --> to close the comment
 line 56 add the closing tag <a/>
 line 58 after the underlined text sentence add the </em> first and then the </p>
 line 58 to make it underlines add the tags <u> and </u> inbetween the <p></p> tags
+line 60 since its a title for the list I would add <ul></ul> between "descriptive item text" to differentiate from the title
 line 64 close the tag with </h2> instead of <h3> 
