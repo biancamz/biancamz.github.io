@@ -1,5 +1,5 @@
-body {
-    max-width: 800px;
+.body {
+    max-width: 1000px;
     margin: 0 auto;
   }
   
@@ -21,4 +21,8 @@ body {
   
   p, li, dd, dt, address {
     line-height: 1.5;
+  }
+
+  .table-of-content {
+    text-align: left;
   }
