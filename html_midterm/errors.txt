@@ -1,3 +1,4 @@
+DOcument 1
 line 1 missing <!DOCTYPE html> 
 line 2 should have <HTML language="en">
 line 2 change language to lang
@@ -23,3 +24,21 @@ line 58 after the underlined text sentence add the </em> first and then the </p>
 line 58 to make it underlines add the tags <u> and </u> inbetween the <p></p> tags
 line 60 since its a title for the list I would add <ul></ul> between "descriptive item text" to differentiate from the title
 line 64 close the tag with </h2> instead of <h3> 
+
+Document 2
+line 2 add <HTML language="en">
+line 6 add </head>
+line 7 close the opening tag in body
+line 8 remove tag <html>
+line 8 remove a tab space from <div> and add a class inside
+line 9 add the closing tag </strong> after important
+Line 9 add closing </p> tag
+line 11 delete href and change for src
+Line 11 add relative path of image
+Line 12 add div closing tag
+line 13 add opening tag <h2>
+line 15 add <p> opening tag 
+line 16 delete the carrot tags 
+line 16 add <--! --=> to make it a comment
+line 17 add closing body tag
+line 18 add an l to html tag
