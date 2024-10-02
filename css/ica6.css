@@ -39,13 +39,14 @@
     text-shadow: 1px 1px 1px black;
     background-image: url("https://raw.githubusercontent.com/mdn/learning-area/master/css/styling-boxes/letterheaded-paper-start/logo.png");
     box-shadow: black;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
   }
   /* Your CSS below here */
 
 
 .top{
 position: fixed;
-top: 10px
+top: 10px;
   }
 
 .bottom{
@@ -53,13 +54,13 @@ top: 10px
     position: fixed;
     bottom: 10px;
       }
-
-.letterbackground {
+      
+#letter{
     position:fixed;
     top:0px;
     bottom: 0px;
     background-color: #cccccc;
-    background-image: linear-gradient(#cccccc, white, #cccccc);
+    background: linear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent 40%, transparent 60%, rgba(0, 0, 0, 0.5));
     
 }
 
