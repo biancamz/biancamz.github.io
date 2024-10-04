@@ -1,0 +1,61 @@
+img{
+    position: absolute;
+}
+
+.bottomimage{
+    z-index: 0;
+}
+
+
+.bottomimage .cheetah{
+    top: 0px;
+    left: 5px;
+}
+
+
+
+
+.middleimage{
+    z-index: 1;
+}
+
+.middleimage .shell{
+    top: 10px;
+    left: 500px;
+    
+}
+
+.bottomimage .lake{
+    top: 50px;
+    right: 10px;
+}
+
+.middleimage .pool{
+    top: 10px;
+    left: 10px;
+}
+
+.middleimage .lady{
+    bottom: 10px;
+    right: 10px;
+    
+}
+
+.topimage{
+    z-index: 2;
+}
+
+.topimage .rooster{
+    Bottom: 10px;
+    left: 100px;
+}
+
+.topimage .sunbathing{
+    Bottom: 10px;
+    right: 500px;
+}
+
+.topimage .mouse{
+    top: 100px;
+    left: 500px;
+}
