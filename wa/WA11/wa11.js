@@ -18,12 +18,11 @@ const alt= {
 
 }
 /* Looping through images */
-for (let i = 0; i<images.length; i++){
-
-const newImage = document.createElement('img');
-newImage.setAttribute('src', '/img/' + images[i]);
-newImage.setAttribute('alt', alt[images[i]]);
-thumbBar.appendChild(newImage);
+for (let i = 0; i < images.length; i++) {
+    const newImage = document.createElement('img');
+    newImage.setAttribute('src', images[i]);  // Use the full image path already present in the array
+    newImage.setAttribute('alt', alt[images[i]]);
+    thumbBar.appendChild(newImage);
 newImage.addEventListener('click', e=>{
     displayedImage.src = e.target.src;
     displayedImage.alt = e.target.alt;
