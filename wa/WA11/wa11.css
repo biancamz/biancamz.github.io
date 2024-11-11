@@ -3,41 +3,58 @@ h1 {
     text-align: center;
   }
   
-  body {
+body {
     width: 640px;
     margin: 0 auto;
   }
   
-  .full-img {
+.full-img {
     position: relative;
     display: block;
     width: 640px;
     height: 480px;
   }
   
-  .overlay {
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 640px;
     height: 480px;
-    background-color: rgba(0,0,0,0);
-  }
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
   
-  button {
-    border: 0;
-    background: rgba(150,150,150,0.6);
-    text-shadow: 1px 1px 1px white;
-    border: 1px solid #999;
-    position: absolute;
-    cursor: pointer;
-    top: 2px;
-    left: 2px;
-  }
-  
-  .thumb-bar img {
-    display: block;
-    width: 20%;
-    float: left;
-    cursor: pointer;
-  }
+
+.displayed-img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+button {
+  border: 1px solid #999;
+  background: rgba(150, 150, 150, 0.6);
+  text-shadow: 1px 1px 1px white;
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px;
+  padding: 5px 10px;
+}
+
+
+.thumb-bar {
+  height:auto;  
+  display: flex;
+  width: 640px;          
+  justify-content: center;                
+}
+
+.thumb-bar img {
+  width: 20%;    
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  justify-content: center;  
+}
