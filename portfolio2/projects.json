@@ -1,0 +1,32 @@
+[
+    {
+      "name": "Fashion Magazine Spread",
+      "image": "img copy/retro-1.png", 
+      "file": "pdfs/BiancaMeurer-Zeman-Project1-ReframingPortrait copy.pdf", 
+      "category": "Spreads"
+    },
+    {
+      "name": "Branding Project",
+      "image": "img copy/retro-1.png",
+      "file": "pdfs/branding copy.pdf",
+      "category": "Proposal"
+    },
+    {
+      "name": "Logo",
+      "image": "img copy/retro-1.png",
+      "file": "pdfs/logo1 copy.pdf",
+      "category": "Proposal"
+    },
+    {
+      "name": "Concert Poster",
+      "image": "img copy/retro-1.png",
+      "file": "pdfs/text project 2copy.1 copy.pdf",
+      "category": "Proposal"
+    },
+    {
+      "name": "The Year Magazine",
+      "image": "img copy/retro-1.png",
+      "file": "pdfs/magazine 2024(1) copy.pdf",
+      "category": "Spreads"
+    }
+]

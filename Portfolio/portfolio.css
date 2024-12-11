@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    cursor: none;
+}
+
+#customCursor {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: url('../Portfolio/img/Untitled-9.png') no-repeat center center;
+    background-size: contain;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 40px 0;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    color: blue;
+}
+
+#imageContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainImage {
+    position: relative;
+    width: 110%;
+    height: auto;
+}
+
+.otherImages {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    display: none;
+    opacity: 0;
+}
+
+.otherImages.visible {
+    display: block;
+    opacity: 1;
+}
