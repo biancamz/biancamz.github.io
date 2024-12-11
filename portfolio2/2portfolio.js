@@ -186,9 +186,12 @@ function setup() {
 }
 
 function mouseDragged() {
-    let type = _("#pen-pencil").checked ? "pencil" : "brush";
-    let size = parseInt(_("#pen-size").value);
-    let color = _("#pen-color").value;
+    // Get the pen type (pencil or brush)
+    let type = document.querySelector("#pen-pencil").checked ? "pencil" : "brush";
+    // Get the pen size (as an integer)
+    let size = parseInt(document.querySelector("#pen-size").value);
+    // Get the pen color (hex value)
+    let color = document.querySelector("#pen-color").value;
 
     console.log('Drawing type:', type);  // Check tool selected
     console.log('Pen size:', size);      // Check size input
@@ -196,7 +199,7 @@ function mouseDragged() {
 
     fill(color);
     stroke(color);
-    strokeWeight(2);  // Ensure strokes are visible
+    strokeWeight(1);  // Ensure strokes are visible
 
     if (type === "pencil") {
         line(pmouseX, pmouseY, mouseX, mouseY);
@@ -205,12 +208,11 @@ function mouseDragged() {
     }
 }
 
-// Reset canvas on button click
-_("#reset-canvas").addEventListener("click", function () {
+document.querySelector("#reset-canvas").addEventListener("click", function () {
     background(255);  // Reset the canvas (clear it)
 });
 
 // Save canvas on button click
-_("#save-canvas").addEventListener("click", function () {
+document.querySelector("#save-canvas").addEventListener("click", function () {
     saveCanvas(canvas, "sketch", "png");
 });
