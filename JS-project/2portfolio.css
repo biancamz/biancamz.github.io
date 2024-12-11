@@ -7,8 +7,7 @@
   color: #072edc;
   overflow: scroll;
   font-family: "Press Start 2P", sans-serif;
-  line-height: 1;  /* Improve line height for readability */
-
+  line-height: 1; 
   }
 
   h1{
@@ -17,132 +16,105 @@
 
 
 
-      /* Pop-up Window */
-      .popup {
-          width: 700px;
-          height: 600px;
-          border: 4px solid #072edc;
-          background-color: #ebf1ff;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          display: flex;
-          flex-direction: column;
-          box-shadow: 8px 8px 0 #060d69;
-          overflow: hidden;
-          image-rendering: pixelated;
-          border-radius: 4px;
+  .popup {
+    width: 700px;
+    height: 600px;
+    border: 4px solid #072edc;
+    background-color: #ebf1ff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 8px 0 #060d69;
+    overflow: hidden;
+    image-rendering: pixelated;
+    border-radius: 4px;
       }
 
-      .title-bar {
-          background: #072edc;
-          color: white;
-          font-size: 18px;
-          padding: 10px;
-          display: flex;
-          align-items: center;
-          border-bottom: 2px solid #072edc;
+  .title-bar {
+    background: #072edc;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #072edc;
       }
 
-      .title-bar span {
-          font-size: 14px;
+    .title-bar span {
+      font-size: 14px;
       }
 
-      .close-btn{
-        position: absolute;
-        right: 2px;
+    .close-btn{
+      position: absolute;
+      right: 2px;
       }
-      .maximize-btn{
-        position: absolute;
-        right: 26.75px;
-      }
-
-      .minimize-btn{
-        position: absolute;
-        right: 50px;
+    .maximize-btn{
+      position: absolute;
+      right: 26.75px;
       }
 
-
-      .toolbar {
-        margin-top: 20px;
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      
-      .tool-btn {
-        background-color: #c0c0c0;
-        border: 1px solid #a9a9a9;
-        font-size: 12px;
-        padding: 5px 10px;
-        cursor: pointer;
-        border-radius: 4px;
-        margin-right: 10px;
+    .minimize-btn{
+      position: absolute;
+      right: 50px;
       }
 
-      /* Hover effect for the buttons */
-.tool-btn:hover{
-  background-color: #797676;
-}
-
-      .content {
-          flex-grow: 1;
-          display: flex;
-          overflow-y: auto;
+  .content {
+    flex-grow: 1;
+    display: flex;
+    overflow-y: auto;
       }
 
-      
-
-      /* Custom Scrollbar */
-      .content::-webkit-scrollbar {
-          width: 10px;
+  .content::-webkit-scrollbar {
+      width: 10px;
       }
 
-      .content::-webkit-scrollbar-thumb {
-          background: #060d69;
-          border-radius: 5px;
+  .content::-webkit-scrollbar-thumb {
+        background: #060d69;
+        border-radius: 5px;
       }
 
-      .content::-webkit-scrollbar-thumb:hover {
-          background: #03073c;
+  .content::-webkit-scrollbar-thumb:hover {
+      background: #03073c;
       }
 
 
-      .bottom-bar {
-        position:absolute;
-        bottom:0px;
-        background-color: #072edc;
-        border-bottom: 4px solid #020c9b;
-        padding: 10px;
-        display: flex;
-        justify-content: left;
-        width: 100%;
+  .bottom-bar {
+    position:absolute;
+    bottom:0px;
+    background-color: #072edc;
+    border-bottom: 4px solid #020c9b;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    width: 100%;
         
     }
 
-    .bottom-bar button {
-        background-color: #ebf1ff;
-        border: 2px solid #072edc;
-        color: #072edc;
-        font-size: 14px;
-        padding: 10px 20px;
-        margin: 0 5px;
-        cursor: pointer;
-        box-shadow: 3px 3px 0 #060d69;
-        transition: all 0.2s ease;
+  .bottom-bar button {
+    background-color: #ebf1ff;
+    border: 2px solid #072edc;
+    color: #072edc;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #060d69;
+    transition: all 0.2s ease;
     }
 
-    .bottom-bar button:hover {
-        transform: translateY(-2px);
-        box-shadow: 4px 4px 0 #060d69;
+  .bottom-bar button:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 0 #060d69;
     }
 
-    .bottom-bar button:active {
-        transform: translateY(2px);
-        box-shadow: none;
+  .bottom-bar button:active {
+    transform: translateY(2px);
+    box-shadow: none;
     }
-  
-  /* Main Desktop Area */
+
 .maindesktop {
   border: 5px solid black;
   width: 100vw;
@@ -155,7 +127,6 @@
   background-repeat: no-repeat;
 }
 
-/* Desktop Folders */
 .desktop {
   position: absolute;
   top: 5%;
@@ -205,9 +176,6 @@
 }
 
 
-
-
-/* Folder 1 Popup with embedded PDF icons */
 .popup .content {
   display: flex;
   flex-wrap: wrap;
@@ -216,8 +184,6 @@
   padding: 10px;
 }
 
-
-/* Small PDF icons inside Folder 1 */
 .pdf-icon {
   width: 200px;
   height: 200px;
@@ -231,22 +197,17 @@
 }
 
 .pdf-icon img {
-  width: 50px; /* Small icon size */
+  width: 50px; 
   height: 50px;
   margin-bottom: 5px;
 }
 
-.pdf-icon span {
-  font-size: 10px;
-  color: #ff69b4;
-}
 
-/* Hover effect for PDF icons */
+
 .pdf-icon:hover {
   transform: scale(1.1);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
-
 
 
 .projects-container {
@@ -285,19 +246,14 @@
   background-color: #0056b3;
 }
 
-
-
-
-
 .carousel-images img {
   max-height: 100%;
   max-width: 100%;
-  display: none; /* Initially hide all images */
+  display: none; 
   transition: opacity 0.3s ease-in-out;
   z-index: 10;
 }
 
-/* Navigation buttons (previous and next) */
 .prev-btn, .next-btn {
   position: absolute;
   top: 50%;
@@ -319,12 +275,10 @@
   right: 10px;
 }
 
-/* Hover effect for the buttons */
 .prev-btn:hover, .next-btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Disable the buttons when at the first/last image */
 .prev-btn:disabled, .next-btn:disabled {
   background-color: rgba(0, 0, 0, 0.3);
   cursor: not-allowed;
@@ -348,21 +302,20 @@ p{
 
 
 
-/* General Popup Styles */
 .popup-container {
   position: absolute;
-  display: none; /* Hidden by default */
+  display: none; 
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Overlay background */
+  background: rgba(0, 0, 0, 0.5); 
   z-index: 1000;
   padding: 20px;
 }
 
 #carouselPopup {
-  display: none;  /* Initially hidden */
+  display: none;  
   position: absolute;
   top: 0;
   left: 0;
@@ -380,7 +333,7 @@ p{
   overflow: hidden;
 }
 
-/* Ensure the carousel content fills the full width and height of the popup */
+
 .carousel-content {
   position: absolute;
   display: flex;
@@ -388,7 +341,7 @@ p{
   width: 100%;
 }
 
-/* Navigation buttons should be flexible and occupy the full space */
+
 .carousel-nav {
   display: flex;
   align-items: center;
@@ -397,7 +350,7 @@ p{
   height: 100%;
 }
 
-/* The slide area should also take up all available space */
+
 .carousel-slide {
   display: flex;
   justify-content: center;
@@ -405,21 +358,20 @@ p{
   flex-grow: 1;
   width: 100%;
   height: 100%;
-  padding: 0;  /* Remove any padding for a clean layout */
+  padding: 0; 
 }
 
-/* Ensure the PDF viewer takes 100% width and height inside the slide */
 .carousel-slide embed {
   width: 100%;
   height: 100%;
-  border: none; /* Remove any borders */
+  border: none; 
 }
 
 
 
 #filterSection {
   background: #f7f8fc;
-  display: none;  /* Hide the filter by default */
+  display: none; 
   margin: 10px;
   padding: 5px;
   display: flex;
@@ -430,51 +382,49 @@ p{
   
 }
 
-/* Projects Section */
+
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;  /* Space between the items */
+  gap: 20px; 
   justify-content:left;
   padding: 20px;
 }
 
-/* Individual Project Item */
 .project-item {
-  width: 150px;  /* Adjust size of each project item */
-  height: 150px;  /* Adjust size of each project item */
+  width: 150px;  
+  height: 150px; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;  /* Make sure text is at the bottom */
+  justify-content: space-between;  
   text-align: center;
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
-  border: 2px solid #072edc;  /* Same border as folder icons */
-  box-shadow: 4px 4px 0 #060d69;  /* Same box shadow as folder icons */
-  border-radius: 4px;  /* Rounded corners for the project item */
-  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  border: 2px solid #072edc; 
+  box-shadow: 4px 4px 0 #060d69;  
+  border-radius: 4px;  
+  transition: transform 0.3s ease;
 }
 
-/* Project Thumbnail - Image inside project item */
+
 .project-thumbnail {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;  /* Full width of the container */
-  flex-grow: 1;  /* Take up available space in the container */
+  width: 100%;  
+  flex-grow: 1;  
 }
 
 .project-thumbnail img {
-  max-width: 100%;  /* Make sure the image doesn't overflow */
-  max-height: 80%;  /* Limit height to ensure it fits the container */
-  object-fit: contain;  /* Keep the aspect ratio while filling the available space */
+  max-width: 100%;  
+  max-height: 80%; 
+  object-fit: contain;  
 }
 
-/* Correct position of text inside project item */
 .project-item span {
-  background: rgba(255, 255, 255, 0.9);  /* Light background for the text */
+  background: rgba(255, 255, 255, 0.9);  
   width: 100%;
   text-align: center;
   padding: 4px 0;
@@ -483,18 +433,18 @@ p{
   font-family: "Press Start 2P", sans-serif;
 }
 
-/* Hover effect for all project items */
+
 .project-item:hover {
-  transform: translateY(-5px);  /* Lift the project item on hover */
-  box-shadow: 6px 6px 0 #072edc;  /* Enhanced shadow effect on hover */
+  transform: translateY(-5px);  
+  box-shadow: 6px 6px 0 #072edc;  
 }
 
 .project-item:active {
-  transform: translateY(2px);  /* Button-like effect on click */
+  transform: translateY(2px); 
   box-shadow: none;
 }
 
-/* For smaller screens, adjust thumbnail size */
+
 @media (max-width: 768px) {
   .project-item {
     width: 120px;
@@ -502,23 +452,23 @@ p{
   }
 
   .project-thumbnail img {
-    max-width: 90%;  /* Smaller images for mobile */
+    max-width: 90%;  
     max-height: 70%;
   }
 }
 
-/* General Styles for the Paint App */
+
 .app {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f5f5f5;  /* Light background to match other pages */
+  background-color: #f5f5f5;  
   padding: 20px;
-  font-family: 'Arial', sans-serif;  /* Ensure font consistency */
+  font-family: 'Arial', sans-serif;  
 }
 
-/* Controls Section */
+
 .controls {
   background-color: #ffffff;
   padding: 20px;
@@ -541,8 +491,6 @@ p{
   text-align: center;
   color: #333;
 }
-
-
 
 
 .type label:hover {
@@ -588,7 +536,7 @@ p{
   border: 10px solid #0f1cd6;
 }
 
-/* Optional: Additional styles for larger screens */
+
 @media (min-width: 768px) {
   .app {
       padding: 40px;
