@@ -150,7 +150,7 @@
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
-  background: url('../portfolio2/img copy/download.webp');
+  background: url('../JS-project/img copy/download.webp');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -169,7 +169,7 @@
 .folder-icon {
   width: 100px;
   height: 100px;
-  background: url('../portfolio2/img copy/retro-1.png') no-repeat center center;
+  background: url('../JS-project/img copy/retro-1.png') no-repeat center center;
   background-size: contain;
   display: flex;
   flex-direction: column;
